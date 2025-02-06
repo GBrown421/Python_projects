@@ -11,7 +11,7 @@ monsterlist: List[str] = ["Snake", "Goblin", "Troll", "Tiger", "Witch", "Dragon"
 placelist: List[str] = ["overgrowen", "hot", "dark", "normal", "mined-out", "ancient", "gloomy", "small",]
 dropslist: List[str] = ["sword", "shield", "potion", "leather armor"]
 buylist: List[str] = ["sword", "shield", "potion", "leather armor"]
-monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Dragon.png")
+monster_image = image.load(r"C:\Users\33905\Pictures\Dragon.png")
 monster_image = transform.scale(monster_image, (150, 100))
 
 heath_inv: List[str] = []
@@ -78,9 +78,9 @@ def bgmusic() -> None:
     global running_music
     init()
     tracks = [
-        r"C:\Users\33905\Music\Sound\02 - Overworld.mp3",
-        r"C:\Users\33905\Music\Sound\029_-_hyrule_field_(night).mp3",
-        r"C:\Users\33905\Music\Sound\109_-_twilight_palace.mp3"
+        r"C:\Users\33905\Music.mp3",
+        r"C:\Users\33905\Music.mp3",
+        r"C:\Users\33905\Music.mp3"
     ]
     mixer.music.load(tracks[0])
     mixer.music.play()
