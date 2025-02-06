@@ -2,7 +2,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-url = "https://www.merriam-webster.com/dictionary/white"
+url = "https://www.example.com"
 response = requests.get(url)
 
 # Check if the request was successful
