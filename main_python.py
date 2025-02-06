@@ -16,9 +16,9 @@ font = font.Font(None, 36)
 screen.fill(BLACK)
 
 
-background = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Cave.png")
-background2 = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Cave and wall.png")
-player_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Base.png")
+background = image.load(r"C:\Users\33905\Pictures\Cave.png")
+background2 = image.load(r"C:\Users\33905\Pictures\Cave and wall.png")
+player_image = image.load(r"C:\Users\33905\Pictures\Base.png")
 background = transform.scale(background, (800, 600))
 background2 = transform.scale(background2, (800, 600))
 player_image = transform.scale(player_image, (150, 150))
@@ -210,22 +210,22 @@ def battle(player_health: int, player_attack: int, enemy_health: int, enemy_atta
     enemy_attack_mod = 0
     monster_list: str = choice(monsters)
     if monster_list == "Snake":
-        monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Snake demon.png")
+        monster_image = image.load(r"C:\Users\33905\Pictures\Snake.png")
         monster_image = transform.scale(monster_image, (200, 200))
     elif monster_list == "Tiger":
-        monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Tiger.png")
+        monster_image = image.load(r"C:\Users\33905\Pictures\Tiger.png")
         monster_image = transform.scale(monster_image, (200, 200))
     elif monster_list == "Witch":
-        monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Witch.png")
+        monster_image = image.load(r"C:\Users\33905\Pictures\Witch.png")
         monster_image = transform.scale(monster_image, (200, 200))
     elif monster_list == "Golem":
-        monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Stone golem.png")
+        monster_image = image.load(r"C:\Users\33905\Pictures\Stone golem.png")
         monster_image = transform.scale(monster_image, (200, 200))
     elif monster_list == "Troll":
-        monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Troll.png")
+        monster_image = image.load(r"C:\Users\33905\Pictures\Troll.png")
         monster_image = transform.scale(monster_image, (200, 200))
     elif monster_list == "Goblin":
-        monster_image = image.load(r"C:\Users\33905\Pictures\Saved Pictures\Goblin.png")
+        monster_image = image.load(r"C:\Users\33905\Pictures\Goblin.png")
         monster_image = transform.scale(monster_image, (200, 200))
     else:
         pass
@@ -316,7 +316,7 @@ def battle(player_health: int, player_attack: int, enemy_health: int, enemy_atta
             elif x <= 215:
                 ran = randint(1, 4)
                 if ran == 1:
-                    playsoundeffect(r"C:\Users\33905\Music\New folder\sword-clash-241729 (2).mp3")
+                    playsoundeffect(r"C:\Users\33905\Music\sword clash.mp3")
                     changescr("You parry the attack")
                     enemy_attack_mod += 5
                     eroll = False
@@ -364,7 +364,7 @@ def battle(player_health: int, player_attack: int, enemy_health: int, enemy_atta
                 run = False
                 base_health = player_health
             elif enemy_health == 0:
-                playsoundeffect(r"C:\Users\33905\Music\New folder\grunt-1-85280.mp3")
+                playsoundeffect(r"C:\Users\33905\Music\grunt.mp3")
                 changescr(f"The Player wins! The {monster_list} is dead")
                 # Healing for next round
                 heath_inv.append("Health charm")
